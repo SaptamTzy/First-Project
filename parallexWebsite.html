@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Testing Parallex</title>
+		<style>
+			* {
+				margin: 0%;
+				padding: 0%;
+				box-sizing: border-box;
+				font-family: 'fantasy';
+			}
+			h2 {
+				font-size: 60px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #cc3363;
+				text-shadow: 8px 4px 1px #20063b;
+			}
+			p {
+				font-size: 40px;
+				font-weight: bold;
+				color: #62c370;
+			}
+			section {
+				width: 100%;
+				height: 100vh;
+				display: grid;
+				place-content: center;
+				text-align: center;
+				background-image: url(https://images.pexels.com/photos/16756656/pexels-photo-16756656/free-photo-of-black-and-white-photo-of-a-swan-on-a-lake.jpeg);
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-attachment: fixed;
+			}
+			.section-2 {
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				place-content: center;
+				background-image: url(https://images.pexels.com/photos/2265260/pexels-photo-2265260.jpeg);
+				background-size: cover; /* This will cover the entire background, cropping as necessary */
+				background-position: center; /* Center the background image */
+				background-repeat: no-repeat; /* Prevent the background image from repeating */
+				height: 100vh; /* Set the height of the body to the full viewport height */
+				margin: 0;
+				width: 100%; /* Remove default margin */
+			}
+			.section-3 {
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-image: url(https://images.pexels.com/photos/674804/pexels-photo-674804.jpeg);
+				background-attachment: fixed;
+			}
+			.section-4 {
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				background-image: url(https://images.pexels.com/photos/3253095/pexels-photo-3253095.jpeg);
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h2>Parallex</h2>
+			<p>The best CSS course ever</p>
+		</section>
+		<section class="section-2">
+			<h2>ThapaTechnical</h2>
+			<p>The best CSS course ever</p>
+		</section>
+		<section class="section-3">
+			<h2>Parallex</h2>
+			<p>The best CSS course ever</p>
+		</section>
+		<section class="section-4">
+			<h2>Subscribe</h2>
+			<p>The best CSS course ever</p>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+h1 {
+	color: red;
+	font-size: small;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+	color: cyan;
+	font-size: small;
+}
+
+#btn {
+	background-color: red;
+	color: white;
+}
+#btn:hover {
+	background-color: black;
+	color: rgba(0, 0, 255, 1);
+}
+/* h1{color: #FF0000;} */
+/* .para{color: #00FF00;}  */
+/* #btn{color: #0000FF;} */
+/* how can we make text color fully tansparent */
+/* we can make this by two steps either by
+  h1{color: rgba(255,0,0,0);} or
+  h1{color: transparent;} */
+/* how can we set the text color of an element to match the current color 
+  of another CSS property within the same element  */
+/* we was use this 
+  .hero-section{color: red;}
+  #para{color: currentColor;} */
+/* this is the comment part */
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: antiquewhite;
+	background-image: url('./pexels-eugenia-remark-19457025.jpg'),
+		url('./pexels-joaquin-carfagna-19013686.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: difference;
+	background-position: top right;
+}
