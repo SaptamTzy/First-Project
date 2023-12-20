@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			h1 {
+				font-size: 60px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #ff0000;
+				text-shadow: 2px 2px 0px #f3f70f;
+				/* margin: auto; */
+				margin-top: 0px;
+				/* margin: auto; */
+			}
+			p {
+				/* display: grid;
+				place-content: center;
+				padding: 40px;
+				margin: 20px;
+			*/
+				font-size: 40px;
+				font-weight: bold;
+				color: #2f00ff;
+				text-shadow: 2px 2px 0px #ffffff;
+			}
+			p::first-letter {
+				font-size: 60px;
+			}
+			section {
+				height: 100vh;
+				width: 100%;
+				background-image: url('./yoga1.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				background-attachment: fixed;
+			}
+			#robo1 {
+				height: 100vh;
+				width: 100%;
+
+				background-image: url('./yoga2.jpg');
+
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: grid;
+				place-content: center;
+			}
+			#robo2 {
+				height: 100%;
+				background-image: linear-gradient(
+					to bottom,
+					rgba(17, 96, 128, 0.52),
+					rgba(233, 234, 238, 0.73)
+				);
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: grid;
+				place-content: center;
+				background-attachment: fixed;
+			}
+			#robo3 {
+				height: 100vh;
+				width: 100%;
+				background-image: url('./yoga4.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: grid;
+				place-content: center;
+			}
+			#robo4 {
+				width: 100%;
+				height: 100vh;
+				background-image: url('./yoga5.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-size: 100% auto;
+				display: grid;
+				place-content: center;
+				background-attachment: fixed;
+			}
+			#table1 {
+				margin: auto;
+				padding-top: 10px;
+				display: grid;
+				place-content: center;
+			}
+			#table1 > ul > li {
+				color: white;
+			}
+			/* #robo2div {
+				margin-top: 400px;
+			} */
+			#img1 {
+				margin-top: 50px;
+				filter: drop-shadow(3px 1px 1px black);
+			}
+			#img2 {
+				margin-top: 50px;
+				filter: drop-shadow(3px 2px 0px black);
+			}
+
+			#new1 {
+				margin: auto;
+				padding: 10px;
+				display: grid;
+				text-align: center;
+				color: whitesmoke;
+				text-shadow: 2px 2px 0px #070707;
+				filter: drop-shadow(3px 2px 0px black);
+			}
+			.test1 {
+				color: whitesmoke;
+				text-shadow: 2px 2px 0px #070707;
+			}
+			#new {
+				height: 100vh;
+				width: 100%;
+				background-image: url('./yoga4.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: grid;
+				place-content: center;
+			}
+			li {
+				margin: auto;
+				margin-top: 10px;
+				padding: 5px;
+				font-style: italic;
+				font-weight: 400px;
+				font-size: 30px;
+			}
+			#robo5 {
+				height: 100vh;
+				width: 100%;
+				background-image: url('./yogapose2.avif');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: grid;
+				place-content: center;
+				background-attachment: fixed;
+			}
+			#para1 {
+				/* text-shadow: 3px 4px 1px black;
+				color: white; */
+				/* color: #cfc547; */
+				/* color: #08cdf1; */
+				color: #b408f1;
+				text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+					-1px -1px 0 #c6c23f;
+			}
+			#para2 {
+				/* text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+					-3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8); */
+				color: yellow;
+				text-shadow: 2px 2px 0px #e2135c;
+			}
+			#para3 {
+				color: yellow;
+				text-shadow: 2px 2px 0px #e2135c;
+			}
+			#para4 {
+				color: magenta;
+				text-shadow: 2px 2px 0px blue;
+				padding-left: 10px;
+			}
+			#para5 {
+				color: yellow;
+				text-shadow: 3px 2px 0px cyan;
+				margin-top: -10px;
+			}
+
+			.ancher2 {
+				color: yellow;
+				text-decoration: none;
+				font-weight: bold;
+				text-shadow: 2px 2px 0px purple;
+			}
+			.ancher2:hover {
+				color: red;
+			}
+			.ancher1 {
+				color: yellow;
+				text-decoration: none;
+				font-weight: bold;
+				text-shadow: 2px 2px 0px purple;
+			}
+			.ancher1:hover {
+				color: red;
+			}
+			.ancher3 {
+				color: yellow;
+				text-decoration: none;
+				font-weight: bold;
+				text-shadow: 2px 2px 0px purple;
+			}
+			.ancher3:hover {
+				color: red;
+			}
+			#para6 {
+				color: magenta;
+				text-shadow: 2px 2px 0px blue;
+			}
+			#para7 {
+				color: cyan;
+				text-shadow: 2px 2px 0px #e2135c;
+				margin-top: -20px;
+			}
+			li {
+				color: black;
+				text-shadow: 2px 2px 0px white;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="header-1">
+			<div>
+				<div style="display: flex; justify-content: center">
+					<img
+						id="img1"
+						src="./yogaposture2.png"
+						width="400px"
+						alt="" />
+				</div>
+
+				<h1 style="margin-top: 20px; text-align: center">RAJLAKSHMI</h1>
+				<p style="text-align: center">YOGA THERAPY AND PRACTICE CENTRE</p>
+			</div>
+		</section>
+		<section id="robo1">
+			<h1 style="padding-left: 190px"><u>Welcome to RAJLAKSHMI</u></h1>
+			<p
+				id="para1"
+				style="padding-left: 25px">
+				At <em>Rajlakshmi</em>, we are dedicated to promoting health and
+				well-being through personalized and effective physiotherapy services.
+				Our team of experienced therapists is here to guide you on your journey
+				to recovery.
+			</p>
+		</section>
+		<section id="new">
+			<div>
+				<h1>Why choose us</h1>
+				<ul id="new1">
+					<li class="test1">Expert and Compassionate Care</li>
+					<li class="test1">State-of-the-Art Facilities</li>
+					<li class="test1">Tailored Treatment Plans</li>
+					<li class="test1">Positive Patient Outcomes</li>
+				</ul>
+			</div>
+		</section>
+		<section id="robo2">
+			<div id="robo2div">
+				<img
+					id="img2"
+					src="./yogaposture.png"
+					alt="" />
+				<!-- <h1>Parallex Universe</h1>
+
+				<p>Every step I take create ripples in the multiverse</p> -->
+				<!-- <div id="table1">
+					<ul>
+						<li>behold</li>
+						<li>
+							my
+							<div id="table2">
+								<ul>
+									<li>Yu Zhong</li>
+									<li>Nolan</li>
+								</ul>
+							</div>
+						</li>
+						<li>strength</li>
+					</ul>
+				</div> -->
+			</div>
+		</section>
+		<section id="robo5">
+			<div>
+				<h1 style="margin-left: 20px">About Us:</h1>
+				<p
+					id="para2"
+					style="margin-left: 10px">
+					Established with a mission to provide comprehensive and compassionate
+					care, <em>Rajlakshmi</em> is a leading physiotherapy center in Silchar
+					. Our team of highly skilled therapists is committed to helping you
+					achieve optimal health and wellness.
+				</p>
+				<br />
+				<h1 style="margin-left: 20px">Our Approach:</h1>
+				<p
+					id="para3"
+					style="margin-left: 10px">
+					We believe in a holistic approach to physiotherapy, addressing not
+					only the symptoms but also the underlying causes of discomfort. With
+					personalized treatment plans, we aim to empower our patients to lead
+					active and pain-free lives.
+				</p>
+			</div>
+		</section>
+		<section id="robo3">
+			<h1 style="padding-left: 30px">Membership/ Pricing:</h1>
+			<p
+				id="para4"
+				style="margin-top: 10px">
+				<strong>Join Our Yoga Community&hearts;</strong>
+			</p>
+			<br />
+			<p
+				id="para5"
+				style="padding-left: 10px">
+				Become a part of our vibrant yoga community with flexible membership
+				options designed to accommodate your schedule. Choose the plan that
+				suits you best and start your yoga journey today.
+			</p>
+		</section>
+		<section id="robo4">
+			<h1 style="margin-left: 40px">Contact Us:</h1>
+			<p
+				id="para6"
+				style="margin-left: 10px">
+				Connect with <em>Rajlaskshmi</em>&heartsuit;
+			</p>
+			<br />
+			<p
+				id="para7"
+				style="margin-left: 10px">
+				Ready to start your yoga journey or have questions? Reach out to us -
+				we'd love to hear from you!
+			</p>
+			<div>
+				<ul>
+					<li style="padding-left: 10px">
+						Phone number-<a
+							class="ancher1"
+							href="tel:+918452386907"
+							>8453286907</a
+						>
+					</li>
+					<li style="margin-left: 10px">
+						Email-<a
+							class="ancher2"
+							href="mailto:saptamroy40@gmail.com">
+							saptamroy40@gmail.com</a
+						>
+					</li>
+					<li style="margin-left: 10px">
+						Location-<a
+							class="ancher3"
+							href="https://maps.app.goo.gl/GEJgYhvZF8Sn4z349"
+							target="_blank">
+							Rajlakshmi Yoga Center,ISKCON Mandir Road, Ambicapatty, Silchar,
+							Assam 788004
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</body>
+</html>

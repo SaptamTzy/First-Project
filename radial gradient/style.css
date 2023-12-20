@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section {
+	max-width: 100%;
+	height: 100vh;
+	background-image: radial-gradient(
+		circle at center,
+		red 20%,
+		yellow 40%,
+		rgb(29, 56, 206) 40%,
+		rgb(31, 221, 221) 50%,
+		rgb(14, 214, 48) 80%
+	);
+}
