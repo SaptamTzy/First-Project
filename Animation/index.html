@@ -33,20 +33,24 @@
 				filter: drop-shadow(2px 2px 6px rgb(59, 82, 211));
 				border-radius: 50%;
 				animation-name: lefttoright;
-				animation-duration: 3s;
+				animation-duration: 1s;
 				animation-timing-function: linear;
 				animation-delay: 2s;
 				animation-iteration-count: 2;
-				animation-direction: alternate-reverse;
+				/* it is used for loop */
+				animation-direction: alternate;
+				/* alternate is used to bring back */
 			}
 			@keyframes lefttoright {
-				form {
+				0% {
 					translate: 0%;
 				}
-				to {
+				50% {
+					translate: 50vw 50vh;
+					/* this is used to add additional animation in the middle */
+				}
+				100% {
 					translate: calc(90vw - 150px);
-					/* we always have to use calc() to esure that our animation animates in the screen */
-					/* in calc() we substract our desirable width with the width of the item in which animation will occur */
 				}
 			}
 		</style>
