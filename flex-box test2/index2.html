@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				background-color: black;
+			}
+			.flex-container {
+				display: flex;
+				background-color: black;
+				max-width: 100%;
+			}
+			h1 {
+				font-size: 30px;
+				font-weight: 600;
+				color: white;
+			}
+			p {
+				font-size: 25px;
+				font-weight: 500px;
+				color: white;
+			}
+			.item1 {
+				margin: auto;
+				width: 50%;
+			}
+			a {
+				display: inline-block;
+				text-align: center;
+				width: 200px;
+				border: 4px solid red;
+				padding: 10px;
+				text-decoration: none;
+				font-size: medium;
+				font-size: 20px;
+
+				background-color: black;
+				color: white;
+
+				transition-property: width, color, background-color;
+				transition-duration: 0.3s;
+				transition-timing-function: linear;
+				transition-delay: 1s;
+			}
+
+			a:hover {
+				width: 300px;
+				background-color: white;
+				color: black;
+			}
+
+			img:hover {
+				width: 400px;
+				filter: drop-shadow(1px 1px 2px red);
+			}
+			img {
+				transition-property: width;
+				transition-duration: 0.3s;
+				transition-timing-function: linear;
+				transition-delay: 1s;
+				filter: drop-shadow(3px 3px 2px rgb(62, 31, 202));
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-container">
+			<div class="item1">
+				<h1>FlexBox Test1</h1>
+				<p>
+					Unleash your web design potential with the best CSS course on the
+					internet! 🚀 Elevate your skills, create stunning websites, and
+					transform your career. Join us today and embark on a CSS journey like
+					never before.
+				</p>
+				<!-- <button>Subscribe</button> -->
+				<a
+					href="https://thapatechnical.shop/"
+					title="info"
+					>Enroll now</a
+				>
+			</div>
+			<div class="item2">
+				<img
+					src="./../../Thapa/1696415575167-Thapa Technical Complete CSS Course Starter Files/CSS/images/css.png"
+					alt=""
+					width="500px" />
+			</div>
+		</div>
+	</body>
+</html>

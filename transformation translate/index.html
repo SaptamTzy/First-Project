@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: rgb(65, 70, 70);
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100vw;
+				height: 100vh;
+				box-shadow: inset 0 0 0 5px blue;
+			}
+			.item img {
+				width: 450px;
+				height: auto;
+				/* height: 100vh; */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 30px;
+				filter: drop-shadow(4px 4px 2px red);
+			}
+			.item img {
+				transition: all 0.3s linear;
+			}
+
+			.item img:hover {
+				/* transform: translateX(300px); */
+				/* scale: 2; used to zoom or shrink */
+				/* transform: rotate(90deg); used tp rotate  */
+				/* remember in transform: skew(45deg); */
+				/* rotate: 20deg;
+				transform-origin: left; */
+				/* transform: translateX(300px) scale(1.3) rotate(20deg); */ we can use all togerther too
+			}
+			/* there is a shortcut to use translate ; here we will write translate: 500px 200px;
+			which means 500px horizontally and 200px veretically so the hovered item will go randomly */
+		</style>
+	</head>
+	<body>
+		<section class="container">
+			<!-- <div class="box">like</div>
+			<div class="box">Subscribe</div>
+			<div class="box">total</div>
+			<div class="box">aspirints</div>
+			<div class="box">image</div> -->
+			<div class="item">
+				<img
+					src="./../../Thapa/1696415575167-Thapa Technical Complete CSS Course Starter Files/CSS/images/html.png"
+					alt="" />
+			</div>
+		</section>
+	</body>
+</html>
