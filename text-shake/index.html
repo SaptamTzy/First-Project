@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+			rel="stylesheet" />
+		<title>Text Style</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(145, 139, 139);
+			}
+			h1 {
+				font-size: 100px;
+
+				text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+				color: rgb(213, 245, 74);
+				text-transform: uppercase;
+				text-align: center;
+				font-family: 'Bungee Spice', sans-serif;
+				animation: textshake 0.3s linear infinite alternate;
+			}
+			/* h1:hover {
+				animation: textshake 10s linear infinite;
+			} */
+			/* @keyframes textshake {
+				0% {
+					rotate: 20deg;
+				}
+				50% {
+					rotate: -20deg;
+				}
+				100% {
+					rotate: 20deg;
+				}
+			} */
+			@keyframes textshake {
+				0% {
+					rotate: 15deg;
+				}
+				50% {
+					rotate: 0deg;
+				}
+				100% {
+					rotate: -15deg;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Thapa <br />technical</h1>
+	</body>
+</html>
