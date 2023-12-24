@@ -19,13 +19,7 @@
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
 			}
-			img {
-				width: 250px;
-				position: absolute;
-				bottom: 8.7%;
-				animation: MarioRun 2s linear;
-				animation-iteration-count: infinite;
-			}
+
 			section {
 				width: 300px;
 				display: flex;
@@ -38,14 +32,24 @@
 				background-color: yellow;
 				padding: 10px;
 			}
-			@keyframes MarioRun {
-				0% {
-					translate: 0%;
-				}
-				100% {
-					translate: calc(100vw - 250px);
-				}
+
+			#mario-character-run {
+				width: 250px;
+				position: absolute;
+				bottom: 8.7%;
+				/* animation: MarioRun 2s linear; */
+				/* animation: MarioJump 2s ease-in-out infinite; */
+				animation-iteration-count: infinite;
 			}
+			.mario-jump {
+				animation: MarioJump 2s ease-in-out infinite;
+				filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+			}
+
+			.mario-run {
+				animation: MarioRun 2s linear;
+			}
+
 			@keyframes heading {
 				0% {
 					translate: 0%;
@@ -54,9 +58,50 @@
 					translate: calc(100vw - 300px);
 				}
 			}
+			@keyframes MarioJump {
+				0% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-150px);
+				}
+				100% {
+					transform: translateY(0);
+				}
+			}
+			@keyframes MarioRun {
+				0% {
+					translate: 0%;
+				}
+				100% {
+					translate: calc(100vw - 250px);
+				}
+			}
 		</style>
 	</head>
+
 	<body>
+		<div style="display: none">
+			<audio
+				id="runAudio"
+				controls
+				loop
+				autoplay>
+				<source
+					src="./superMarioTheme.mp3"
+					type="audio/mp3" />
+				Your browser does not support the audio element.
+			</audio>
+			<audio
+				id="jumpAudio"
+				controls>
+				<source
+					src="./jump.mp3"
+					type="audio/mp3" />
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+
 		<div>
 			<div id="heading-background">
 				<section>
@@ -64,8 +109,56 @@
 				</section>
 			</div>
 			<img
+				id="mario-character-run"
 				src="mario-run.gif"
 				alt="" />
 		</div>
+		<script>
+			console.log('hello');
+			/* document.getElementById("myElement").classList.add("myClass") */
+			// Get the audio element
+			let audio = document.getElementById('jumpAudio');
+			let runAudio = document.getElementById('runAudio');
+			let marioCharacter = document.getElementById('mario-character-run');
+
+			// Conditionally apply the MarioJump animation
+			function applyJumpAnimation() {
+				console.log('marioCharacter.classList', marioCharacter.classList);
+				marioCharacter.classList.add('mario-jump');
+				marioCharacter.classList.remove('mario-run');
+			}
+
+			// Conditionally apply the MarioRun animation
+			function applyRunAnimation() {
+				marioCharacter.classList.add('mario-run');
+				marioCharacter.classList.remove('mario-jump');
+			}
+
+			// Function to play the audio
+			function playAudio() {
+				applyJumpAnimation();
+				audio.play();
+			}
+
+			// Function to stop the audio
+			function stopAudio() {
+				audio.pause();
+				audio.currentTime = 0; // Reset audio to the beginning
+			}
+			document.body.onkeyup = function (e) {
+				if (e.key == ' ' || e.code == 'Space' || e.keyCode == 32) {
+					//your code
+					playAudio();
+				} else if (e.key == 'q' || e.keyCode == 113) {
+					runAudio.play();
+				}
+			};
+
+			audio.addEventListener('ended', function () {
+				applyRunAnimation();
+				console.log('Audio has played to completion');
+			});
+			applyRunAnimation();
+		</script>
 	</body>
 </html>

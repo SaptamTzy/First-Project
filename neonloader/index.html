@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: gray;
+			}
+			.loader {
+				width: 200px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				background-color: cyan;
+				position: relative;
+				animation: moon 3s linear infinite reverse;
+			}
+			.loader::before {
+				content: '';
+
+				position: absolute;
+				/* top: 0;
+				left: 0; */
+				width: 170px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				background-color: gray;
+			}
+			.loader::after {
+				content: '';
+				position: absolute;
+				top: -27px;
+				left: 40px;
+				width: 70px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				background-color: cyan;
+				box-shadow: 1px 1px 10px 10px cyan;
+			}
+			@keyframes moon {
+				0% {
+					rotate: 0deg;
+				}
+				100% {
+					rotate: 360deg;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader"></div>
+	</body>
+</html>

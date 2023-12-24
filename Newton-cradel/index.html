@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(128, 138, 138);
+			}
+			.container {
+				width: 40rem;
+				height: 40rem;
+				background-color: transparent;
+				border-top: 1rem solid rgb(180, 47, 180);
+				border-radius: 0.5rem;
+				display: flex;
+				/* justify-content: space-around; */
+				justify-content: center;
+				gap: 42px;
+			}
+			div {
+				width: 0.5rem;
+				height: 20rem;
+				background-color: rgb(180, 47, 180);
+				position: relative;
+			}
+			.container div::before {
+				content: '';
+				position: absolute;
+				/* bottom: 0; */
+				left: -20px;
+				top: 97%;
+
+				width: 50px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				background-color: rgb(180, 47, 180);
+			}
+
+			.container div:first-child {
+				animation: left-swing 2s linear infinite;
+				transform-origin: left top;
+				display: flex;
+				justify-content: center;
+			}
+
+			@keyframes left-swing {
+				0% {
+					rotate: 0deg;
+				}
+				25% {
+					rotate: 30deg;
+				}
+				50% {
+					rotate: 0deg;
+				}
+				100% {
+					rotate: 0deg;
+				}
+			}
+			.container div:last-child {
+				animation: right-swing 2s linear 1s infinite;
+				transform-origin: right top;
+				display: flex;
+				justify-content: center;
+			}
+			@keyframes right-swing {
+				0% {
+					rotate: 0deg;
+				}
+				25% {
+					rotate: -30deg;
+				}
+				50% {
+					rotate: 0deg;
+				}
+				100% {
+					rotate: 0deg;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

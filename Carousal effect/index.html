@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(132, 136, 124);
+			}
+			.container-img {
+				width: 40vw;
+				height: 300px;
+				border-radius: 10px;
+				box-shadow: 2px 2px 2px 2px black;
+				background-image: url(https://images.pexels.com/photos/620337/pexels-photo-620337.jpeg);
+				background-size: cover;
+				animation: gallery 40s linear infinite;
+			}
+			@keyframes gallery {
+				0% {
+					background-image: url(https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg);
+				}
+				10% {
+					background-image: url(https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg);
+				}
+				20% {
+					background-image: url(https://images.pexels.com/photos/826354/pexels-photo-826354.jpeg);
+				}
+				40% {
+					background-image: url(https://images.pexels.com/photos/1612353/pexels-photo-1612353.jpeg);
+				}
+				60% {
+					background-image: url(https://images.pexels.com/photos/158489/yellowstone-national-park-sunset-twilight-dusk-158489.jpeg);
+				}
+				80% {
+					background-image: url(https://images.pexels.com/photos/753278/pexels-photo-753278.jpeg);
+				}
+				100% {
+					background-image: url(https://images.pexels.com/photos/586120/pexels-photo-586120.jpeg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-img"></div>
+	</body>
+</html>
