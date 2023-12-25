@@ -23,14 +23,67 @@
 				width: 40vw;
 				aspect-ratio: 1;
 				background-color: coral;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 12px;
+				animation: sky 10s linear infinite;
 			}
 			.sun {
 				width: 18vw;
 				aspect-ratio: 1;
-				background-color: rgb(214, 93, 22);
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				background-color: rgb(233, 183, 18);
+				border-radius: 50%;
+				position: relative;
+				overflow: hidden;
+			}
+			.sun::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: inherit;
+				aspect-ratio: 1;
+				background-color: #000;
+				border-radius: 50%;
+				animation: moonwalk 10s ease-in-out infinite;
+			}
+			@keyframes moonwalk {
+				0% {
+					translate: 100%;
+					scale: 1;
+				}
+				50% {
+					translate: 0%;
+					scale: 1;
+				}
+				100% {
+					translate: -100%;
+					scale: 1;
+				}
+			}
+			@keyframes sky {
+				0% {
+					background-color: rgb(100, 198, 236);
+				}
+				13% {
+					background-color: rgb(6, 34, 85);
+				}
+				25% {
+					background-color: rgb(10, 11, 85);
+				}
+				50% {
+					background-color: #000000;
+				}
+				75% {
+					background-color: rgb(10, 11, 85);
+				}
+				85% {
+					background-color: rgb(6, 34, 85);
+				}
+				100% {
+					background-color: rgb(100, 198, 236);
+				}
 			}
 		</style>
 	</head>
