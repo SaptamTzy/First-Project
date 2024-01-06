@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main {
+	width: 100%;
+	background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.5) 50%,
+			rgba(0, 0, 0, 0.5) 50%
+		),
+		url(sunset1.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+/* start nav bar */
+.navbar {
+	width: 1200px;
+	height: 75px;
+	margin: auto;
+}
+.icon {
+	width: 200px;
+	height: 70px;
+	float: left;
+}
+.logo {
+	color: orange;
+	font-size: 35px;
+	font-family: Arial;
+	padding-left: 20px;
+	float: left;
+	padding-top: 10px;
+}
+.menu {
+	width: 400px;
+	float: left;
+	height: 70px;
+}
+ul {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li {
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 16px;
+}
+ul li a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+}
+ul li a:hover {
+	color: orange;
+}
+.search {
+	width: 330px;
+	float: left;
+	margin-left: 270px;
+}
+.srch {
+	font-family: 'Times New Roman';
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid orange;
+	margin-top: 13px;
+	color: white;
+	border-right: none;
+	float: left;
+	font-size: 16px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.btn {
+	width: 100px;
+	height: 40px;
+	background: orange;
+	border: 2px solid orange;
+	margin-top: 13px;
+	float: left;
+	color: white;
+	font-size: 16px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.btn:focus {
+	outline: none;
+}
+.srch:focus {
+	outline: none;
+}
+/* end nav bar */
+
+/* start section */
+.content {
+	width: 1200px;
+	height: auto;
+	color: white;
+	margin: auto;
+	position: relative;
+}
+.content .par {
+	padding-left: 20px;
+	padding-bottom: 25px;
+	letter-spacing: 1.2px;
+	color: white;
+	line-height: 30px;
+	font-family: Arial;
+}
+.content h1 {
+	letter-spacing: 2px;
+	padding-left: 20px;
+	font-size: 50px;
+	font-family: 'Times New Roman';
+	margin-top: 9%;
+}
+.content .cn {
+	width: 160px;
+	height: 40px;
+	margin-left: 20px;
+	background: orange;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	transition: 0.4s ease;
+}
+.content .cn a {
+	text-decoration: none;
+	color: #000;
+	transition: 0.3s ease;
+}
+.cn:hover {
+	background-color: white;
+}
+.content span {
+	color: orange;
+	font-size: 60px;
+}
+/* End section */
+/* Start form */
+.form {
+	width: 250px;
+	height: 430px;
+
+	background: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0.5) 50%
+	);
+	position: absolute;
+	top: -20px;
+	left: 870px;
+	border-radius: 10px;
+	padding: 25px;
+}
+.form h2 {
+	width: 200px;
+
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 22px;
+	color: orange;
+	background-color: white;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+.form input {
+	width: 200px;
+	height: 30px;
+	background: transparent;
+	border-bottom: 1px solid orange;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	margin-top: 30px;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+input:focus {
+	outline: none;
+}
+::placeholder {
+	color: white;
+	font-family: arial;
+	padding-left: 5px;
+}
+.btnn {
+	width: 200px;
+	background: orange;
+	height: 40px;
+	border: none;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	transition: 0.4s ease;
+}
+.btnn:hover {
+	background-color: white;
+	color: orange;
+}
+.btnn a {
+	text-decoration: none;
+	text-transform: capitalize;
+	color: black;
+	font-weight: bold;
+}
+.form .link {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+	font-family: arial;
+}
+.form .link a {
+	text-decoration: none;
+	color: orange;
+}
+.liw {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.icon a {
+	text-decoration: none;
+	color: white;
+	place-content: center;
+}
+.icon ion-icon {
+	padding-left: 14px;
+	padding-top: 8px;
+
+	font-size: 22px;
+	color: white;
+}
+.hero-information input {
+	font-size: 24px;
+}
