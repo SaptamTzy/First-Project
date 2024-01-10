@@ -5,7 +5,7 @@
 }
 
 body {
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 	width: 100%;
 	background: #0f2027;
 	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -714,7 +714,7 @@ input:focus {
 	align-items: center;
 }
 /* start media query    for mobile */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 480px) {
 	.logo {
 		margin-left: 29px;
 	}
@@ -724,7 +724,7 @@ input:focus {
 		gap: 17px;
 	}
 	.real-heading h1 {
-		font-size: 73px;
+		font-size: 52px;
 	}
 	.blunt-heading {
 		font-size: 59px;
@@ -741,10 +741,10 @@ input:focus {
 	.image img {
 		margin-top: 77px;
 		margin-right: 24px;
-		width: 307px;
+		max-width: 307px;
 	}
 	.card {
-		width: 205px;
+		max-width: 205px;
 		padding-left: 10px;
 	}
 	.food-items {
@@ -758,25 +758,25 @@ input:focus {
 		border-bottom: 0.1px solid white;
 	}
 	.hero-container {
-		width: 420px;
+		max-width: 420px;
 		margin-left: 15px;
 		padding-left: 10px;
 		border-color: transparent;
 	}
 	.hero-container2 {
-		width: 420px;
+		max-width: 420px;
 		margin-left: 15px;
 		padding-left: 10px;
 		border-color: transparent;
 	}
 	.hero-container3 {
-		width: 420px;
+		max-width: 420px;
 		margin-left: 15px;
 		padding-left: 10px;
 		border-color: transparent;
 	}
 	.hero-container4 {
-		width: 420px;
+		max-width: 420px;
 		margin-left: 15px;
 		padding-left: 10px;
 		border-color: transparent;
@@ -836,7 +836,7 @@ input:focus {
 		margin-top: -152px;
 	}
 	.name1 {
-		width: 425px;
+		max-width: 425px;
 		padding-left: 7px;
 		padding-bottom: 20px;
 		display: flex;
