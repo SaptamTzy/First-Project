@@ -6,9 +6,12 @@
 
 body {
 	width: 100%;
-
-	/* aspect-ratio: 1; */
-	background-image: linear-gradient(173.1deg, #e242f9f0 10.2%, #4f93f9 77.3%);
+	/* overflow-x: hidden; */
+	aspect-ratio: 1;
+	/* background-image: linear-gradient(173.1deg, #e242f9f0 10.2%, #4f93f9 77.3%); */
+	background: #0f2027;
+	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 /* start nav section */
 .list {
@@ -22,6 +25,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+}
+.list a {
+	text-decoration: none;
+	color: white;
 }
 .hero-section {
 	display: flex;
@@ -551,6 +558,8 @@ body {
 .name3 textarea {
 	font-size: 19px;
 	border-radius: 5px;
+	padding-left: 5px;
+	padding-top: 10px;
 }
 .name3 {
 	display: flex;
@@ -566,6 +575,12 @@ body {
 }
 textarea::placeholder {
 	padding-top: 20px;
+}
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
 }
 .btn button {
 	padding-top: 10px;
@@ -617,7 +632,7 @@ input:focus {
 	flex-direction: column;
 	align-items: flex-start;
 }
-.omniman {
+/* .omniman {
 	position: relative;
 }
 
@@ -639,12 +654,14 @@ input:focus {
 
 .custom-shape-divider-bottom-1704461658 .shape-fill {
 	fill: #ffffff;
-}
+} */
 
 /* End contact section */
 /* start footer */
 .footer {
-	background-color: #e242f9f0;
+	margin-top: 80px;
+	width: 100%;
+	/* background-color: #e242f9f0; */
 }
 .footer-img img {
 	width: 250px;
@@ -718,5 +735,162 @@ input:focus {
 .footer {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+}
+/* start media query    for mobile */
+@media screen and (min-width: 0) and (max-width: 480px) {
+	.logo {
+		margin-left: 29px;
+	}
+	.list {
+		font-size: 15px;
+		margin-right: -3px;
+		gap: 17px;
+	}
+	.real-heading h1 {
+		font-size: 73px;
+	}
+	.blunt-heading {
+		font-size: 59px;
+		letter-spacing: 0;
+		margin-left: 30px;
+	}
+	.real-heading {
+		margin-top: -9px;
+		margin-left: 50px;
+	}
+	.real-heading p {
+		padding-left: 25px;
+	}
+	.image img {
+		margin-top: 77px;
+		margin-right: 24px;
+		width: 307px;
+	}
+	.card {
+		width: 205px;
+		padding-left: 10px;
+	}
+	.food-items {
+		gap: 10px;
+	}
+	.new-menu .para1 {
+		color: white;
+		opacity: 1.7;
+	}
+	.hero-shakes {
+		border-bottom: 0.1px solid white;
+	}
+	.hero-container {
+		width: 420px;
+		margin-left: 15px;
+		padding-left: 10px;
+		border-color: transparent;
+	}
+	.hero-container2 {
+		width: 420px;
+		margin-left: 15px;
+		padding-left: 10px;
+		border-color: transparent;
+	}
+	.hero-container3 {
+		width: 420px;
+		margin-left: 15px;
+		padding-left: 10px;
+		border-color: transparent;
+	}
+	.hero-container4 {
+		width: 420px;
+		margin-left: 15px;
+		padding-left: 10px;
+		border-color: transparent;
+	}
+	.king-container {
+		gap: 38px;
+	}
+	.location {
+		font-size: 33px;
+		text-align: center;
+		padding-left: 10px;
+	}
+	.location h5 {
+		display: none;
+	}
+	.king-loaction {
+		gap: 72px;
+	}
+	.location-description h1 {
+		text-align: center;
+		font-size: 28px;
+	}
+	.location-description p {
+		opacity: 0.7;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.map-location {
+		margin-left: 30px;
+		margin-right: 20px;
+	}
+	.real-card {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 30px;
+		row-gap: 20px;
+	}
+	.img-para h2 {
+		padding-left: 26px;
+	}
+	.img-para h1 {
+		padding-left: 20px;
+	}
+	.img-para h3 {
+		padding-left: 20px;
+	}
+	.img-para p {
+		padding-left: 20px;
+		font-size: 25px;
+	}
+	.img-para {
+		padding-top: 3px;
+	}
+	.hero-contact {
+		width: 440px;
+		padding-right: 115px;
+		margin-top: -152px;
+	}
+	.name1 {
+		width: 425px;
+		padding-left: 7px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.hero-information {
+		margin-top: 63px;
+	}
+	.name2 {
+		padding-left: 7px;
+	}
+	.name2 input {
+		width: 416px;
+	}
+	.name3 {
+		padding-left: 7px;
+	}
+	.name3 textarea {
+		width: 414px;
+	}
+	.btn {
+		padding-left: 7px;
+		padding-top: 10px;
+	}
+	.footer-descrip p {
+		padding-left: 10px;
+	}
+	.sub-contact p {
+		width: 494px;
+	}
 }
