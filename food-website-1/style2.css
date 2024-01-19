@@ -5,8 +5,8 @@
 }
 
 body {
-	overflow-x: hidden;
-	width: 100%;
+	/* overflow-x: hidden;
+	width: 100%; */
 	background: #0f2027;
 	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
 	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -549,8 +549,8 @@ body {
 }
 .name2 {
 	display: flex;
-	/* justify-content: flex-start; */
-	/* padding-left: 30px; */
+	justify-content: flex-start;
+	padding-left: 30px;
 	padding-bottom: 20px;
 }
 .name3 textarea {
@@ -749,6 +749,7 @@ input:focus {
 	}
 	.food-items {
 		gap: 10px;
+		padding-left: 114px;
 	}
 	.new-menu .para1 {
 		color: white;
@@ -836,27 +837,36 @@ input:focus {
 		margin-top: -152px;
 	}
 	.name1 {
-		max-width: 425px;
-		padding-left: 7px;
+		/* max-width: 425px; */
+		/* max-width: 90%; */
+		/* padding-left: 7px;
 		padding-bottom: 20px;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 20px; */
+		display: flex;
+		flex-direction: column;
+		padding-left: 14%;
 	}
+	.name1 input {
+		max-width: 60%;
+	}
+
 	.hero-information {
 		margin-top: 63px;
 	}
+
 	.name2 {
-		padding-left: 7px;
+		padding-left: 14%;
 	}
 	.name2 input {
-		max-width: 416px;
+		max-width: 60%;
 	}
 	.name3 {
-		padding-left: 7px;
+		padding-left: 14%;
 	}
 	.name3 textarea {
-		max-width: 414px;
+		max-width: 60%;
 	}
 	.btn {
 		padding-left: 7px;
