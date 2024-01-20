@@ -744,6 +744,13 @@ button:hover {
 }
 /* start media query    for mobile */
 @media screen and (min-width: 0px) and (max-width: 480px) {
+	.grandhero-contact {
+		display: flex;
+		padding-top: 10rem;
+		padding-left: 27px;
+		flex-wrap: wrap;
+		padding-bottom: 10rem;
+	}
 	.database {
 		margin-right: 87px;
 		margin-top: 20px;
