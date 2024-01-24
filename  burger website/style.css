@@ -910,6 +910,7 @@ body {
 	font-size: 17px;
 	text-transform: capitalize;
 	font-weight: 600;
+	transition: all 0.3s linear;
 }
 .footer-list ul li {
 	list-style: none;
@@ -934,10 +935,14 @@ footer {
 	margin-top: 4%;
 	margin-bottom: 10%;
 }
+.footer-list ul li a:hover {
+	color: red;
+}
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
 	.guidence2 img {
 		max-width: 300px;
+		padding-top: 25px;
 	}
 	.menu-card2 img {
 		max-width: 330px;
@@ -995,7 +1000,7 @@ footer {
 		margin-top: 10px;
 	}
 	.sectionLocation {
-		gap: 18px;
+		gap: 33px;
 	}
 	.footer-list ul {
 		flex-wrap: wrap;
