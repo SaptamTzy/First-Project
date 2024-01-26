@@ -993,6 +993,7 @@ footer {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+/* End footer section */
 @media screen and (min-width: 0px) and (max-width: 480px) {
 	.hero-party-image {
 		& img {
