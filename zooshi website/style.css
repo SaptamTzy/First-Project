@@ -819,7 +819,7 @@
 }
 
 .custom-shape-divider-bottom-1706266643 .shape-fill {
-	fill: #50bb35b0;
+	fill: #5bc142b0;
 }
 
 /* end benefit section */
@@ -988,4 +988,209 @@ footer {
 	gap: 3rem;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+	.hero-party-image {
+		& img {
+			max-width: 376px;
+		}
+	}
+	.nav-logo {
+		padding-top: 10px;
+		& img {
+			max-width: 90px;
+		}
+	}
+	.nav-bar {
+		padding-top: 20px;
+		text-align: center;
+		padding-left: 23px;
+	}
+	.hero-nav {
+		filter: drop-shadow(2px 4px 6px rgba(112, 112, 112, 0.432));
+		position: fixed;
+		z-index: 1;
+	}
+	.nav-btn {
+		& button {
+			display: none;
+		}
+	}
+	.hero-heading {
+		padding-top: 13rem;
+	}
+	.heading {
+		& h3 {
+			font-size: 60px;
+		}
+	}
+	.header-image4 {
+		display: none;
+	}
+	.header-image3 {
+		display: none;
+	}
+	.header-image1 {
+		display: none;
+	}
+	.header-image2 {
+		display: none;
+	}
+	.description {
+		& h1 {
+			font-size: 55px;
+			padding-left: 1rem;
+		}
+		& h3 {
+			padding-left: 1rem;
+		}
+		& p {
+			padding-left: 1rem;
+			line-height: 32px;
+		}
+	}
+	.about-image img {
+		width: 292px;
+	}
+	.about-section {
+		gap: 1rem;
+	}
+	.robo1 {
+		padding-left: 1rem;
+		padding-bottom: 14px;
+	}
+	.robo2 {
+		padding-left: 1rem;
+		text-align: left;
+		font-size: 55px;
+	}
+	.menu-logo {
+		padding-left: 1rem;
+	}
+
+	.time-table {
+		& ul li {
+			font-size: 18px;
+		}
+		& ul {
+			padding-top: 61px;
+			padding-bottom: 35px;
+			padding-left: 41px;
+			padding-right: 41px;
+		}
+	}
+	.card-description {
+		& h2 {
+			text-align: left;
+			padding-left: 1rem;
+			color: maroon;
+		}
+	}
+	.menu-image {
+		& button {
+			margin-top: 17px;
+		}
+	}
+	.menu-btn {
+		& button {
+			margin-top: 17px;
+		}
+	}
+	.card-description {
+		& h1 {
+			font-size: 46px;
+			text-align: left;
+			padding-left: 1rem;
+			color: maroon;
+		}
+	}
+	.card1 {
+		border-top-left-radius: 285px;
+		border-top-right-radius: 285px;
+	}
+	.card-para {
+		gap: 0.5rem;
+	}
+	.agents {
+		gap: 4rem;
+	}
+	.main-cards {
+		gap: 52px;
+	}
+	.hero-party {
+		position: static;
+		gap: 1rem;
+		background-color: #85ffbd;
+		background-image: linear-gradient(45deg, #1dd372b6 0%, #fffb7d 100%);
+	}
+	.hero-party-image {
+		z-index: 0;
+	}
+	.hero-party-text {
+		padding-right: 1rem;
+		& h2 {
+			padding-top: 5rem;
+			color: maroon;
+			font-weight: 450;
+		}
+		& h1 {
+			color: maroon;
+		}
+		& p {
+			line-height: 34px;
+		}
+	}
+	.plans-text {
+		& h2 {
+			text-align: left;
+			padding-left: 1rem;
+		}
+		& h1 {
+			text-align: left;
+			padding-left: 1rem;
+		}
+	}
+	.plans-card {
+		background-color: rgb(178 221 201);
+		& h1 {
+			color: maroon;
+			font-size: 25px;
+		}
+	}
+	.plans-card3 {
+		background-color: rgb(178 221 201);
+		& h1 {
+			color: maroon;
+			font-size: 25px;
+		}
+	}
+	.footer-logo {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.footer-socials {
+		& h1 {
+			font-size: 26px;
+		}
+	}
+	.fa-facebook-f {
+		font-size: 22px;
+	}
+	.fa-twitter {
+		font-size: 22px;
+	}
+	.fa-google-plus-g {
+		font-size: 22px;
+	}
+	.fa-linkedin-in {
+		font-size: 22px;
+	}
+	.footer-icons {
+		gap: 2rem;
+		padding-top: 41px;
+		padding-bottom: 4rem;
+	}
+	.hero-party::before {
+		position: static;
+	}
 }
