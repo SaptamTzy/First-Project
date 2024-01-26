@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+::selection {
+	color: white;
+	background-color: #56c03c;
+}
 /* font-family: system-ui; */
 /* start head-section */
 
