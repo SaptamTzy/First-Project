@@ -1197,4 +1197,14 @@ footer {
 	.hero-party::before {
 		position: static;
 	}
+	.fame-description {
+		& h1 {
+			color: maroon;
+		}
+	}
+	.agent-info {
+		& h2 {
+			font-size: 26px;
+		}
+	}
 }
