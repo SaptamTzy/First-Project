@@ -459,7 +459,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
-	/* background-image: url(./images/orabge-bg.jpg); */
+
 	background-color: #85ffbd;
 	background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
 
