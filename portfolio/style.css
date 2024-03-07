@@ -566,15 +566,15 @@ button:hover {
 /* end footer section */
 @media screen and (min-width: 0px) and (max-width: 480px) {
 	.self-descrip h1 {
-		text-align: center;
-		font-size: 46px;
-		padding-left: 3rem;
+		margin: auto;
+		font-size: 38px;
+		margin-top: -16px;
 	}
 	.self-descrip h2 {
-		padding-top: 1rem;
+		padding-top: 14px;
 		text-align: center;
 		padding-left: 1rem;
-		font-size: 31px;
+		font-size: 23px;
 		padding-right: 1rem;
 	}
 	.self-descrip a {
@@ -584,22 +584,23 @@ button:hover {
 	.introduction {
 		display: flex;
 		flex-direction: column;
-		padding-top: 12rem;
+		padding-top: 10rem;
 	}
 	.self-photo {
 		order: 1;
+		max-width: 428px;
 	}
 	.self-descrip {
 		order: 2;
 	}
 	.section-heading h1 {
-		font-size: 42px;
+		font-size: 38px;
 		font-family: sans-serif;
 	}
 	.section-card {
 		padding-left: 1rem;
 		padding-right: 1rem;
-		margin-top: -3rem;
+		margin-top: -4rem;
 		gap: 2rem;
 	}
 	.card1 {
@@ -608,29 +609,48 @@ button:hover {
 			rgba(0, 0, 0, 0.09) 0px 32px 16px;
 	}
 	.section-about h1 {
-		font-size: 42px;
+		font-size: 38px;
 		font-family: sans-serif;
 	}
+	.about {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.section-about {
+		padding-bottom: 5px;
+	}
 	.section-description1 p {
-		text-align: center;
+		/* text-align: center; */
+	}
+	.section-description1 {
+		gap: 1.5px;
 	}
 	.about-image img {
 		border-top-left-radius: 7%;
 		border-top-right-radius: 7%;
 		border-bottom-left-radius: 7%;
+		max-height: 384px;
 		border-bottom-right-radius: 7%;
 		box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 	}
 	.button {
-		text-align: center;
-		margin-top: 10px;
+		/* text-align: center; */
+		margin-top: 22px;
+	}
+	.portfolio {
+		gap: 1rem;
 	}
 	.portfolio-heading h1 {
-		font-size: 42px;
+		font-size: 38px;
 		font-family: sans-serif;
 	}
 	.portfolio-text p {
-		font-size: 24px;
+		font-size: 18px;
+		line-height: 1.9rem;
+	}
+	.portfolio-text {
+		padding: 2rem;
 	}
 	.portfolio-text {
 		margin-left: 1rem;
@@ -647,13 +667,25 @@ button:hover {
 		border-radius: 6%;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 	}
+	.portfolio-works a {
+		font-size: 19px;
+	}
+	.portfolio-showcase {
+		gap: 3rem;
+	}
 	.contact-heading h1 {
-		font-size: 42px;
+		font-size: 38px;
 		font-family: sans-serif;
+	}
+	.contact {
+		margin-top: 44px;
+	}
+	.portfolio {
+		padding-bottom: 0rem;
 	}
 	form {
 		text-align: center;
-		padding-top: 3rem;
+		padding-top: 14px;
 		padding-bottom: 3rem;
 		padding-right: 1.5rem;
 		padding-left: 1.5rem;
@@ -662,51 +694,71 @@ button:hover {
 		margin-top: 1rem;
 	}
 	.address h1 {
-		font-size: 30px;
+		font-size: 22px;
+		padding-bottom: 10px;
 	}
 	.address p {
-		font-size: 22px;
+		font-size: 17px;
 		opacity: 0.8;
 		max-width: 300px;
 	}
 	.phone a {
-		font-size: 23px;
+		font-size: 18px;
 	}
 	.icon {
 		gap: 8px;
 	}
 	.insta a {
-		font-size: 23px;
+		font-size: 18px;
 	}
 	.mail a {
-		font-size: 23px;
+		font-size: 18px;
 	}
 	.End {
-		gap: 3rem;
+		gap: 0rem;
+		padding-top: 2.5rem;
+		padding-bottom: 1rem;
 	}
 	.col {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 3rem;
-		text-align: center;
+		gap: 1rem;
+		/* text-align: center; */
 		padding-left: 2rem;
 	}
 	.col1 h1 {
-		font-size: 28px;
+		font-size: 20px;
+		padding-bottom: 1rem;
 	}
 	.col1 ul li {
-		font-size: 19px;
+		font-size: 14px;
+		padding-bottom: 10px;
 	}
 	.heading-nav {
 		position: fixed;
 		padding-bottom: 1rem;
 		z-index: 1;
+		padding-top: 10px;
 	}
 	.heading-nav ul {
 		padding-left: 1rem;
 		padding-right: 1rem;
+		gap: 2rem;
 	}
 	.heading-nav ul li a {
-		font-size: 22px;
+		font-size: 18px;
+	}
+	.section {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	.card1-text p {
+		font-size: 13px;
+	}
+	.formText4 {
+		font-size: 9px;
+	}
+	.address {
+		padding-bottom: 2rem;
 	}
 }
