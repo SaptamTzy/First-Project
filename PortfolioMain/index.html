@@ -16,141 +16,9 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet" />
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-			body {
-				background-color: rgb(0, 0, 33);
-				color: white;
-				font-family: 'Poppins', sans-serif;
-			}
-			nav {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				height: 80px;
-				background-color: rgb(18, 18, 62);
-			}
-			nav ul {
-				display: flex;
-				justify-content: center;
-			}
-			nav ul li {
-				list-style-type: none;
-				margin: 0 23px;
-			}
-			nav ul li a {
-				text-decoration: none;
-				color: white;
-			}
-			nav ul li a:hover {
-				color: rgb(153, 153, 226);
-				font-size: 1.01rem;
-			}
-			.left {
-				font-size: 1.5rem;
-			}
-			.firstSection {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				margin: 90px 0;
-			}
-			.firstSection > div {
-				width: 30%;
-			}
-			.leftSection {
-				font-size: 2rem;
-			}
-			.leftSection .buttons {
-				padding: 50px 0;
-			}
-			.leftSection .btn {
-				padding: 12px;
-				background-color: #1e2167;
-				color: white;
-				border: 2px solid white;
-				border-radius: 6px;
-				font-size: 20px;
-				cursor: pointer;
-			}
-			.rightSection img {
-				width: 80%;
-			}
-			.purple {
-				color: blueviolet;
-			}
-			.text-gray {
-				color: gray;
-			}
-			#element {
-				color: blueviolet;
-			}
-			.secondSection {
-				max-width: 80vw;
-				margin: auto;
-				height: 80vh;
-			}
-			main hr {
-				border: 0;
-				background-color: #9c97f1;
-				height: 1.2px;
-				margin: 60px 84px;
-			}
-			.secondSection h1 {
-				font-size: 1.8rem;
-			}
-			.secondSection .box {
-				background-color: white;
-				height: 2px;
-				width: 77.5vw;
-				margin: 56px 0;
-				display: flex;
-			}
-			.secondSection .vertical {
-				height: 93px;
-				width: 1px;
-				background-color: white;
-				margin: 0 102px;
-			}
-			.image-top {
-				width: 23px;
-				position: relative;
-				top: -32px;
-				left: -9px;
-			}
-			.vertical-title {
-				font-size: 14px;
-				position: relative;
-				top: 75px;
-				width: 150px;
-			}
-			.vertical-desc {
-				position: relative;
-				top: 86px;
-				color: grey;
-				width: 150px;
-				font-size: 9px;
-			}
-			footer {
-				background-color: #0e0e1a;
-				/* height: 233px; */
-			}
-			.footer {
-				display: flex;
-				padding: 23px 122px;
-				justify-content: space-evenly;
-			}
-			.footer ul {
-				list-style-type: none;
-			}
-			.footer > div {
-				width: 223px;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="style.css" />
 	</head>
 	<body>
 		<header>
@@ -182,7 +50,7 @@
 				</div>
 				<div class="rightSection">
 					<img
-						src="./PngItem_1127587.png"
+						src="./images/PngItem_1127587.png"
 						alt="" />
 				</div>
 			</section>
@@ -195,7 +63,7 @@
 					<div class="vertical">
 						<img
 							class="image-top"
-							src="./developer-png.png"
+							src="./images/developer-png.png"
 							alt="" />
 						<div class="vertical-title">HTML Developer</div>
 						<div class="vertical-desc">
@@ -207,7 +75,7 @@
 					<div class="vertical">
 						<img
 							class="image-top"
-							src="./javaScriptLogo.png"
+							src="./images/javaScriptLogo.png"
 							alt="" />
 						<div class="vertical-title">javaScript Developer</div>
 						<div class="vertical-desc">
@@ -219,7 +87,7 @@
 					<div class="vertical">
 						<img
 							class="image-top"
-							src="./node.jsLogo.png"
+							src="./images/node.jsLogo.png"
 							alt="" />
 						<div class="vertical-title">Node.js Developer</div>
 						<div class="vertical-desc">
@@ -231,7 +99,7 @@
 					<div class="vertical">
 						<img
 							class="image-top"
-							src="./react.jsLogo.png"
+							src="./images/react.jsLogo.png"
 							alt="" />
 						<div class="vertical-title">React.js Developer</div>
 						<div class="vertical-desc">
@@ -243,7 +111,7 @@
 					<div class="vertical">
 						<img
 							class="image-top"
-							src="./figmaLogo.png"
+							src="./images/figmaLogo.png"
 							alt="" />
 						<div class="vertical-title">Figma Developer</div>
 						<div class="vertical-desc">
@@ -254,35 +122,147 @@
 					</div>
 				</div>
 			</section>
+			<section class="aboutMe">
+				<div class="aboutLine"></div>
+				<div class="aboutCompartment">
+					<h1>About me..</h1>
+					<div class="aboutDesc">
+						<div class="right1">
+							<img
+								src="./images/aboutImage.png"
+								alt="" />
+						</div>
+						<div class="left1">
+							<div class="left1Box">
+								<img
+									src="./images/frontendlogo.png"
+									alt="" />
+								<div class="Box1text">
+									<h3>FrontEnd Developer</h3>
+									<p>
+										I am a Frontend Developer with experience in building
+										responsive and optimized sites
+									</p>
+								</div>
+							</div>
+							<div class="left1Box">
+								<img
+									src="./images/backendlogo.png"
+									alt="" />
+								<div class="Box1text">
+									<h3>Backend Developer</h3>
+									<p>
+										I am a Frontend Developer with experience in building
+										responsive and optimized sites
+									</p>
+								</div>
+							</div>
+							<div class="left1Box">
+								<img
+									src="./images/bloglogo.png"
+									alt="" />
+								<div class="Box1text">
+									<h3>Blog writer</h3>
+									<p>
+										I have published technical blogs related to JavaScript and
+										plan to publish on other topics as well
+									</p>
+								</div>
+							</div>
+							<div class="left1Box">
+								<img
+									src="./images/uilogo.png"
+									alt="" />
+								<div class="Box1text">
+									<h3>Design & AI Enthusiast</h3>
+									<p>
+										I have an eye for design and am keenly interested in the
+										emerging field of AI and it's tools
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="myprojects">
+				<hr />
+				<div class="myprojectsContainer">
+					<h1>Browse My Projects</h1>
+					<h2>Projects</h2>
+					<div class="card">
+						<div class="card1">
+							<img
+								src="./images/thapaWebsite.png"
+								alt="" />
+							<h1>Gyan Studio</h1>
+							<button
+								onclick="window.location.href='https://saptamtzy.github.io/First-Project/CSS%20final%20project/index.html'">
+								click me
+							</button>
+						</div>
+						<div class="card1">
+							<img
+								src="./images/foodTruck.png"
+								alt="" />
+							<h1>Food Truck</h1>
+							<button
+								onclick="window.location.href='https://saptamtzy.github.io/First-Project/food-website-1/index2.html'">
+								click me
+							</button>
+						</div>
+						<div class="card1">
+							<img
+								src="./images/testoBurger.png"
+								alt="" />
+							<h1>Testo Burger</h1>
+							<button
+								onclick="window.location.href='https://saptamtzy.github.io/First-Project/%20burger%20website/index.html'">
+								click me
+							</button>
+						</div>
+						<div class="card1">
+							<img
+								src="./images/Zooshi.png"
+								alt="" />
+							<h1>Zooshi</h1>
+							<button
+								onclick="window.location.href='https://saptamtzy.github.io/First-Project/zooshi%20website/index.html'">
+								click me
+							</button>
+						</div>
+					</div>
+					<div class="End">
+						<h3>More to come...</h3>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<div class="footer">
-				<div class="footer-first">
-					<h3>Saptam's Developer Portfolio</h3>
-				</div>
-				<div class="footer-second">
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Services</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div class="footer-third">
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Services</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div class="footer-fourth">
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Services</li>
-						<li>Contact</li>
-					</ul>
+				<h2>Get in touch</h2>
+				<h1>Contact me</h1>
+				<div class="linkBox">
+					<a href="mailto:saptamroy40@gmail.com">
+						<img
+							src="./images/newmail.png"
+							alt="" />
+					</a>
+					<a href="tel:+8453286907">
+						<img
+							src="./images/newCall1.png"
+							alt="" />
+					</a>
+					<a href="https://www.instagram.com/wtf_saptam?igsh=NGFydzI1NXBjaHdq">
+						<img
+							src="./images/newinsta.png"
+							alt="" />
+					</a>
+					<a href="https://wa.me/918453286907">
+						<img
+							src="./images/newWa1.png"
+							alt="" />
+					</a>
 				</div>
 			</div>
 		</footer>
