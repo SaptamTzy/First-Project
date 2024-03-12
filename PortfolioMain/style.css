@@ -8,12 +8,24 @@ body {
 	color: white;
 	font-family: 'Poppins', sans-serif;
 }
+html {
+	scroll-behavior: smooth;
+}
+::selection {
+	color: rgb(5, 5, 5);
+	background-color: #c2adad;
+}
 nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 80px;
 	background-color: rgb(18, 18, 62);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 nav ul {
 	display: flex;
@@ -39,6 +51,7 @@ nav ul li a:hover {
 	justify-content: space-around;
 	align-items: center;
 	margin: 90px 0;
+	margin-top: 10rem;
 }
 .firstSection > div {
 	width: 30%;
@@ -73,7 +86,7 @@ nav ul li a:hover {
 .secondSection {
 	max-width: 80vw;
 	margin: auto;
-	height: 80vh;
+	height: 87vh;
 }
 main hr {
 	border: 0;
@@ -292,4 +305,160 @@ footer {
 	gap: 2rem;
 	padding-top: 1.2rem;
 	padding-bottom: 3rem;
+}
+.secondSectionCard1 img {
+	max-width: 80px;
+}
+.secondSectionDesc h2 {
+	font-size: 20px;
+	padding-bottom: 3px;
+}
+.secondSectionDesc p {
+	font-size: 13px;
+	opacity: 0.6;
+}
+.secondSectionCard1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 9px;
+	border: 1px solid transparent;
+	max-width: 400px;
+	padding: 1rem;
+	background-color: rgb(4, 4, 22);
+}
+.secondSectionCard {
+	margin-top: 2.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 3rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+	nav ul li {
+		list-style-type: none;
+		margin: 0px 20px;
+	}
+	nav {
+		flex-direction: column;
+		gap: 10px;
+		padding-top: 15px;
+		padding-bottom: 1rem;
+		height: 111px;
+	}
+	.firstSection > div {
+		width: 71%;
+		text-align: center;
+	}
+	.firstSection {
+		flex-direction: column-reverse;
+		gap: 2.5rem;
+		margin-bottom: 0px;
+		margin-top: 11rem;
+	}
+	.leftSection .btn {
+		margin-top: 13px;
+		margin-left: 12px;
+	}
+	.leftSection .buttons {
+		padding: 22px 0;
+		text-align: justify;
+	}
+	.aboutCompartment {
+		max-width: 100%;
+	}
+	.aboutDesc {
+		flex-direction: column;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		/* margin: auto; */
+		padding-left: 1rem;
+		/* gap: 1rem; */
+		margin-top: 3rem;
+		/* max-width: 100%; */
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+	.right1 {
+		display: none;
+	}
+	.Box1text p {
+		max-width: 101%;
+	}
+	.Box1text h3 {
+		font-size: 23px;
+		padding-bottom: 8px;
+	}
+	.left1 {
+		gap: 1rem;
+		padding-bottom: 1rem;
+	}
+	.aboutCompartment {
+		height: 82vh;
+	}
+	.left1Box {
+		padding: 0;
+		gap: 23px;
+	}
+	.aboutCompartment h1 {
+		padding-left: 2rem;
+	}
+	.card1 {
+		padding: 1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	.card1 img {
+		max-width: 264px;
+	}
+	.card {
+		gap: 2rem;
+		height: 39vh;
+		background: #040849;
+		overflow: auto;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 0;
+		border-radius: 23px;
+		margin-top: 2.5rem;
+	}
+	.card1 button {
+		padding: 8px 21px;
+	}
+	.myprojectsContainer {
+		height: 70vh;
+	}
+	.linkBox img {
+		width: 70px;
+	}
+	.linkBox {
+		gap: 20px;
+	}
+	.footer h2 {
+		padding-bottom: 7px;
+	}
+	.footer {
+		padding-top: 2rem;
+	}
+	.secondSectionCard {
+		gap: 2rem;
+		margin-top: 30px;
+	}
+	.secondSectionCard1 {
+		gap: 9px;
+		padding: 14px;
+	}
+	.secondSection {
+		height: 98vh;
+	}
+	main hr {
+		margin: 57px 66px;
+	}
+	.aboutLine {
+		margin: 57px 66px;
+		border: 0;
+		background-color: #9c97f1;
+		height: 2.2px;
+	}
 }
